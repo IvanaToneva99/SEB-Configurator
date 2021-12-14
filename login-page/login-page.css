@@ -1,0 +1,89 @@
+form input, select, button {
+    display: block;
+    width: 363px;
+    height: 38px;
+    margin-top: 20px;
+}
+
+#register-btn {
+    color: #558D3D;
+    background-color: #CFE7D9;
+    border: 2px solid #BBC9BA;
+    font-size: larger;
+}
+
+div {
+    width: 401px;
+    height: fit-content;
+    padding: 19px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+input, select {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input:hover, select:hover {
+    border: 2px solid #558D3D;
+}
+
+.invalidField {
+    border: 2px solid darkred;
+}
+
+#register-btn:hover {
+    background-color: #558D3D;
+    color: lightgrey;
+}
+
+#title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    text-align: center;
+    color: yellow;
+    font-size: xxx-large;
+}
+
+
+#login-section {
+    vertical-align:middle;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display:table;
+}
+
+form {
+    display:table;
+    margin:auto;
+}
+
+.inputLabel {
+    display: flex;
+    color: yellow;
+    font-size: large;
+    font-weight: bold;
+}
+
+section input {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.invalidLabel {
+    background: darkred;
+    width: 363px;
+    height: 36px;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+}

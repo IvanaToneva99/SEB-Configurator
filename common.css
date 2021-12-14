@@ -1,0 +1,32 @@
+.navigation-bar {
+    background-color: #9D3FF1;
+    overflow: hidden;
+}
+
+.navigation-bar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navigation-bar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navigation-bar a.current {
+    background-color: #2F92F6;
+    color: white;
+}
+
+body {
+    margin: 0;
+    background-image: url("resources/images/product-configurator-1.jpg");
+}
+
+.hidden {
+    display: none;
+}

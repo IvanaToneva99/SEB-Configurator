@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SEB Configurator</title>
+    <link rel="stylesheet" href="generate-from-template.css">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="icon" href="../resources/images/SEBIcon_40_2x.png" type="image/icon type">
+    <script src="generate-from-template.js"></script>
+</head>
+<body onload="fetchConfigurations()">
+<nav class="navigation-bar">
+    <a href="../home-page/home-page.html">Home</a>
+	<a href="../login-page/login-page.html" onclick="logout()">Sign out</a>
+</nav>
+
+<section id="search-section">
+    <h1>SEARCH FOR CONFIGURATION</h1>
+
+    <input type="text" id="search-field" onkeyup="searchFunction()" placeholder="Search for configuration.." title="Type in a name">
+
+    <ul id="items">
+    </ul>
+</section>
+
+<form id="settings" class="hidden">
+
+	<span id="name-span">Template's name:
+		<input type="text" id="name-input" placeholder="Template's name" required>
+	</span>
+
+    <span id="url-span">URL:
+		<input type="text" id="url-input" placeholder="URL" required>
+	</span>
+
+    <span id="taskbar-span">Show taskbar
+		<select name="taskbar" id="taskbar">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="time-span">Show time
+		<select name="time" id="time">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="reload-span">Show reload
+		<select name="show-reload" id="show-reload">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="language-span">Show language
+		<select name="show-language" id="show-language">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="exit-span">Allow exiting
+		<select name="allow-exiting" id="allow-exiting">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="spell-span" class="hidden">Spell checker
+		<select name="spell-checker" id="spell-checker">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="confirmation-span" class="hidden">Ask for confirmation upon exiting
+		<select name="confirm-exit" id="confirm-exit">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="mute-span" class="hidden">Mute audio
+		<select name="mute-audio" id="mute-audio">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="control-audio-span" class="hidden">Allow audio control
+		<select name="allow-audio-control" id="allow-audio-control">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="cookie-span" class="hidden">Clean cookie session upon starting
+		<select name="cookie-cleanup" id="cookie-cleanup">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="preferences-span" class="hidden">Allow preferences windows
+		<select name="preferences-windows" id="preferences-windows">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <button type="button" id="go-back" onclick="goBackToSearch()">Go Back To Search</button>
+    <button type="button" id="change-view-button" onclick="changeStep()">Next</button>
+    <button type="button" class="hidden" id="generate-configuration" onclick="generateConfiguration()">Generate</button>
+
+</form>
+
+
+</body>
+</html>

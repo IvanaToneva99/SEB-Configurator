@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SEB Configurator</title>
+    <link rel="stylesheet" href="home-page.css">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="icon" href="../resources/images/SEBIcon_40_2x.png" type="image/icon type">
+    <script src="home-page.js"></script>
+</head>
+<body onload="loadSignOptions()">
+    <nav class="navigation-bar" id="navigation-bar">
+        <a class="current" href="home-page.html">Home</a>
+    </nav>
+
+    <section id="cards-section">
+        <section class="row">
+            <div class="column">
+                <div class="card" onclick="redirectToCreateFromScratchPage()">
+                    <h1>Create Configuration</h1>
+                    <p>Create new configuration from scratch using the most common options</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card" onclick="redirectToGenerateFromTemplatePage()">
+                    <h1>Create From Template</h1>
+                    <p>Create configuration from existing templates you have already created.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="column">
+                <div class="card" onclick="redirectToCreateTemplatePage()">
+                    <h1>Create Template</h1>
+                    <p>Create template of a configuration which can be used to create new configurations.</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card" onclick="redirectToEditTemplatePage()">
+                    <h1>Edit Template</h1>
+                    <p>Edit an already existing template for configuration which can be used to create configuration later.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SEB Configurator</title>
+    <link rel="stylesheet" href="create-from-scratch-page.css">
+    <link rel="stylesheet" href="../common.css">
+	<link rel="icon" href="../resources/images/SEBIcon_40_2x.png" type="image/icon type">
+    <script src="create-from-scratch-page.js"></script>
+</head>
+<body>
+<nav class="navigation-bar">
+    <a href="../home-page/home-page.html">Home</a>
+	<a href="../login-page/login-page.html" onclick="logout()">Sign out</a>
+</nav>
+
+<form id="settings">
+
+	<span id="url-span">URL:
+		<input type="text" id="url-input" placeholder="URL" required>
+	</span>
+
+    <span id="taskbar-span">Show taskbar
+		<select name="taskbar" id="taskbar">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="time-span">Show time
+		<select name="time" id="time">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="reload-span">Show reload
+		<select name="show-reload" id="show-reload">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="language-span">Show language
+		<select name="show-language" id="show-language">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="exit-span">Allow exiting
+		<select name="allow-exiting" id="allow-exiting">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="spell-span" class="hidden">Spell checker
+		<select name="spell-checker" id="spell-checker">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="confirmation-span" class="hidden">Ask for confirmation upon exiting
+		<select name="confirm-exit" id="confirm-exit">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="mute-span" class="hidden">Mute audio
+		<select name="mute-audio" id="mute-audio">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="control-audio-span" class="hidden">Spell checker
+		<select name="allow-audio-control" id="allow-audio-control">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="cookie-span" class="hidden">Clean cookie session upon starting
+		<select name="cookie-cleanup" id="cookie-cleanup">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+    <span id="preferences-span" class="hidden">Allow preferences windows
+		<select name="preferences-windows" id="preferences-windows">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</select>
+    </span>
+
+	<button type="button" id="change-view-button" onclick="changeView()">Next</button>
+    <button type="submit" onclick="event.preventDefault();
+	 generateConfiguration()" class="hidden" id="generate-configuration">
+	 Generate file</button>
+
+</form>
+
+
+</body>
+</html>
